@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <!--<script src="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"></script>
+  <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>-->
+
+ jQuery CDN link....  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+ 
+    <meta charset="UTF-8">	
+    <title>HTML5 300: Week Two</title>  
+    <!-- link to an external style sheet (best practice with style sheet)-->
+  
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+</head>
+  <body class="page"><!-- everything that is visual goes in the body tag  -->
+    <header>
+        <!-- the "banner" area or title of the page-->
+        <h1>HTML5 300: Week Two</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header>
+      <nav class="nav1"> 
+        <ul>
+          <!-- these links are relative paths -->
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="week1-numberform/index.html">Week One</a></li>
+          <li> <a href="javascript/script.js">JavaScript</a></li>
+          <li> <a href="http://www.google.com">Google</a></li>
+        </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Assignment Two: Managing an In-Memory Database</h3>
+          <!-- A Simple Form    -->
+          <p>Create a table with heading. Table columns represent the properties of the object database.</p>
+        
+      <style scoped>
+        .myTable { background-color:#FFFFE0;border-collapse:collapse; }
+        .myTable th { background-color:#BDB76B;color:white; }
+        .myTable td, .myTable th { padding:5px;border:1px solid #BDB76B; }
+      </style>
+       
+      <table id="t01" class="myTable" width="100%" style="float" border="1">
+        <thead>
+           <tr><th colspan="5">Famous World Leaders</th></tr>
+        </thead>
+        <tbody id="emptytable">
+          
+          <button onclick="myFunction()">Click To Add New Names</button>
+
+<script>
+function myFunction() {
+    var x = document.createElement("TR");
+    x.setAttribute("id", "myTr");
+    document.getElementById("t01").appendChild(x);
+
+    var y = document.createElement("TD");
+    var t = document.createTextNode("new cell");
+    y.appendChild(t);
+    document.getElementById("myTr").appendChild(y);
+}
+</script>
+          
+          
+          
+          
+          
+          <!--<tr>
+            <td>Cell 1 - part of tbody</td>
+          </tr>
+          <tr>
+            <td>Cell 2 - part of tbody</td>
+          </tr>
+          <tr>
+            <td>Cell 3 - part of tbody</td>
+          </tr>-->
+        </tbody>
+      </table>
+     <!-- <input id="insert_data" type="button" style="height: 35px; width: 115px" value="Add New Names"/>-->
+        <!--<Set the syle of this section to display:none. During testing, set style to display:block. />-->
+      <form id="f01" style="display:block" name="form1">
+        <h2>Tell Us Your Favorite World Leaders</h2>
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+                <input type="text" name="firstname" required/>
+            </li>
+            <li>
+              <label for="name">Name:</label>
+                <input type="text" name="firstname" required/>
+            </li>
+            <li>
+              <label for="name">Name:</label>
+                <input type="text" name="firstname" required/>
+            </li>
+            <li>
+              <label for="name">Name:</label>
+                <input type="text" name="firstname" required/>
+            </li> 
+            <input type="submit" value="Submit">
+         </form> 
+      </div><!-- closing maincContent div tag -->
+    <footer>
+      <p>&copy; copyright 2016</p>
+    </footer>
+  </body>
+</html>
