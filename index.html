@@ -49,25 +49,24 @@
         </thead>
         <tbody id="emptytable">
           
+          <!--Found this function on w3schools. Couldn't get my scipt in the js file to work. I commented out my script so that this function could run. Couldn't get this function to run from the js file, though.-->
+          
           <button onclick="myFunction()">Click To Add New Names</button>
 
-<script>
-function myFunction() {
-    var x = document.createElement("TR");
-    x.setAttribute("id", "myTr");
-    document.getElementById("t01").appendChild(x);
+        <script>
+          function myFunction() {
+            var x = document.createElement("TR");
+            x.setAttribute("id", "myTr");
+            document.getElementById("t01").appendChild(x);
 
-    var y = document.createElement("TD");
-    var t = document.createTextNode("new cell");
-    y.appendChild(t);
-    document.getElementById("myTr").appendChild(y);
-}
-</script>
+            var y = document.createElement("TD");
+            var t = document.createTextNode("new cell");
+            y.appendChild(t);
+            document.getElementById("myTr").appendChild(y);
+            }
+        </script>
           
-          
-          
-          
-          
+     
           <!--<tr>
             <td>Cell 1 - part of tbody</td>
           </tr>
@@ -86,19 +85,19 @@ function myFunction() {
           <ul>
             <li>
               <label for="name">Name:</label>
-                <input type="text" name="firstname" required/>
+                <input type="text" name="name" required/>
             </li>
             <li>
               <label for="name">Name:</label>
-                <input type="text" name="firstname" required/>
+                <input type="text" name="name" required/>
             </li>
             <li>
               <label for="name">Name:</label>
-                <input type="text" name="firstname" required/>
+                <input type="text" name="name" required/>
             </li>
             <li>
               <label for="name">Name:</label>
-                <input type="text" name="firstname" required/>
+                <input type="text" name="name" required/>
             </li> 
             <input type="submit" value="Submit">
          </form> 
